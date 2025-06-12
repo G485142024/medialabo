@@ -1,23 +1,22 @@
 p {
 	color: navy;
 }
-p.info{
-	
-	font-size: small;
-	background-color: #dfdfdf;
-}
 
 h1 {
-	color: white;
-	text-shadow: navy 1px 0 10px;
+	color: #3c3c3c;
+	text-shadow: wheat 1px 0 10px;
 }
 
 h2 {
-	color: #af2f31;
+	color: #b14343;
 	margin: 5px;
 	font-family: cursive;
-	background: linear-gradient(to right,white,#b0e6ac);
+	background: linear-gradient(to right,white,#b8efa9);
 
+}
+
+lu {
+	color: forestgreen;
 }
 
 div#zentai {

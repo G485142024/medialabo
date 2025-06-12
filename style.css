@@ -1,11 +1,7 @@
 p {
 	color: navy;
 }
-p.info{
-	
-	font-size: small;
-	background-color: #dfdfdf;
-}
+
 
 h1 {
 	color: white;
@@ -13,11 +9,23 @@ h1 {
 }
 
 h2 {
-	color: #af2f31;
+	color: #3f3faf;
 	margin: 5px;
 	font-family: cursive;
-	background: linear-gradient(to right,white,#b0e6ac);
+	background: linear-gradient(to right,white,#ffefaf);
 
+}
+
+h3 {
+	color: grey;
+}
+
+lu {
+	color: rgb(126, 36, 36);
+}
+
+ol {
+	color: rgb(139, 34, 87);
 }
 
 div#zentai {
