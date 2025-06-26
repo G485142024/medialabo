@@ -14,6 +14,15 @@ function print(data) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  let x = document.querySelector('#kensaku');
+  function greeting() {
+    console.log(x.value);
+  }
+  let b = document.querySelector('button#button');
+  b.addEventListener('click', greeting);
+});
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
