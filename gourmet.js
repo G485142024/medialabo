@@ -25,9 +25,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let result = document.createElement('div');
+  result.id = 'result';
+  document.body.appendChild(result);
 
+  let ul = document.createElement('ul');
+  for (const n of data.results.shop) {
+    let li1 = document.createElement('li');
+    li1.textContent = "店名:"+ n.name;
+    ul.appendChild(li1);
+    let li2 = document.createElement('li');
+    li2.textContent = "住所:"+ n.address
+    ul.appendChild(li2);
+    let li3 = document.createElement('li');
+    li3.textContent = "アクセス情報:"+ n.access
+    ul.appendChild(li3);
+    let li4 = document.createElement('li');
+    li4.textContent = "予算:"+ n.budget.name
+    ul.appendChild(li4);
+    let li5 = document.createElement('li');
+    li5.textContent = "キャッチコピー:"+ n.catch
+    ul.appendChild(li5);
+    let li6 = document.createElement('li');
+    li6.textContent = "ジャンル:"+ n.genre.name
+    ul.appendChild(li6);
+    let li7 = document.createElement('li');
+    li7.textContent = "営業日時:"+ n.open
+    ul.appendChild(li7);
+    let li8 = document.createElement('li');
+    li8.textContent = "最寄駅:"+ n.station_name
+    ul.appendChild(li8);
+    let li9 = document.createElement('li');
+    li9.textContent = "サブジャンル:"+ n.sub_genre.name
+    ul.appendChild(li9);
+  }
+
+  ul.style.color='rgb(54, 93, 54)';
+  result.appendChild(ul);
 }
-
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
 
